@@ -12,7 +12,8 @@ download_test:
 
 extract_test:
 	( if [ ! -d $(SRC_NAME) ]; then \
-		tar -vxf $(SRC_NAME).tar.gz; \
+	        mv $(SRC_NAME).tar.gz $(SRC_NAME).tar
+		tar -vxf $(SRC_NAME).tar; \
 	fi )
 
 config_test:
