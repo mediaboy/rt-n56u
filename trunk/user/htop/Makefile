@@ -12,7 +12,7 @@ download_test:
 
 extract_test:
 	( if [ ! -d $(SRC_NAME) ]; then \
-	        mv $(SRC_NAME).tar.gz $(SRC_NAME).tar
+	        mv $(SRC_NAME).tar.gz $(SRC_NAME).tar; \
 		tar -vxf $(SRC_NAME).tar; \
 	fi )
 
